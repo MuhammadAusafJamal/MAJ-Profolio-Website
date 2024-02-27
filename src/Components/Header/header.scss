@@ -1,0 +1,128 @@
+@import "/src/assets/colors.scss";
+
+
+
+.header-container {
+    display: flex;
+    background-color: $Black !important;
+    // background-color:inherit !important;
+    justify-content: space-between;
+    align-items: center;
+    // margin: 0 auto;
+    margin: 20px;
+    // padding: 10px;
+    border-radius: 10px;
+    // max-width: 80%;
+
+    .container {
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 50px;
+            // background-color: aqua;
+            .logo {
+                width: 70%;
+            }
+        }
+    }
+    .list{
+        color: yellow !important;
+        background-color: $NetflixRed !important;
+        font-size: 20px;
+    }
+    .main-btn{
+        color: $DarkCharcoal !important;
+        background-color: $NetflixRed !important;
+    }
+    &.sticky-header{
+        position: sticky;
+        top: 0;
+        transform: translateY(-80px);
+        animation: stickyHeader 0.3s ease forwards ;
+    }
+}
+
+
+@keyframes stickyHeader {
+    0%{transform: translateY(-80px);}
+    100%{transform: translateY(0px);}
+}
+// .header-container {
+//     display: flex;
+//     // justify-content: space-evenly;
+//     margin: 0 20px;
+//     padding: 10px;
+//     border-radius: 0 0 10px 10px;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     background-color: $DarkCharcoal;
+
+//     .logo-container {
+//         // display: flex;
+//         // align-items: center;
+//         // background-color: $DarkCharcoal;
+//         // color: aqua;
+//         // background-image: none;
+//         // background-color: red;
+//         // margin: 0 auto;
+
+//         .logo {
+//             width: 120px;
+//             height: 60px;
+//             // mix-blend-mode: color-dodge;
+//             // background-image: none;
+//         }
+//     }
+
+//     .nav-container {
+//         display: flex;
+//         align-items: center;
+//         // justify-content: space-between;
+//         // gap: 50px;
+//         // padding: 10px;
+
+//         ul {
+//             display: flex;
+//             margin: 0 auto;
+//             // align-items: center;
+//             // justify-content: space-around;
+//             gap: 60px;
+//             color: red;
+//             font-size: 20px;
+//             list-style-type: none;
+
+//             li {
+//                 &:hover {
+//                     color: yellow;
+//                     transition: color .20s ease-in-out;
+//                 }
+//             }
+//         }
+//     }
+
+//     .btn-container {
+//         display: flex;
+//         // align-items: center;
+//         justify-content: center;
+//         height: 50px;
+//         width: 200px;
+//         background-color: $NetflixRed;
+//         border-radius: 10px;
+
+//         .btn {
+//             font-size: 20px;
+//             font-weight: 600;
+//             color: white;
+
+//             &:active {
+//                 outline: none;
+//                 border: none;
+//             }
+//         }
+//     }
+// }
