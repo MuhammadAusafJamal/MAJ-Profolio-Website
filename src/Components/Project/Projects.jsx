@@ -10,13 +10,14 @@ function Project() {
 
   const Htmlprojects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Foody Zone",
+      description: "Landing Page",
       imgUrl: projImg2,
       Url: "https://www.youtube.com/"
-    }, {
-      title: "Business Startup",
-      description: "Design & Development",
+    }, 
+    {
+      title: "Foody Zone",
+      description: "Landing Page",
       imgUrl: projImg2,
       Url: "https://www.youtube.com/"
     }
@@ -24,8 +25,8 @@ function Project() {
 
   const Jsprojects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Foody Zone",
+      description: "Landing Page",
       imgUrl: projImg2,
       Url: "https://www.youtube.com/"
     }, {
@@ -37,7 +38,7 @@ function Project() {
   ];
   const Reactprojects = [
     {
-      title: "Business Startup",
+      title: "Dice Guessing Game",
       description: "Design & Development",
       imgUrl: projImg2,
       Url: "https://www.youtube.com/"
