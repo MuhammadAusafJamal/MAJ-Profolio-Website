@@ -1,0 +1,166 @@
+.project-container {
+    position: relative;
+
+    .project-content {
+        padding: 2rem 0;
+        width: 100%;
+
+        .project-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+
+            .project-title {
+                color: yellow;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .project-headline {
+                color: white;
+                font-size: 48px;
+                font-weight: 700;
+                letter-spacing: 0.8px;
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 38px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 28px;
+                }
+            }
+
+            .paragraph {
+                color: #61616C;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+        .project-bottom {
+            padding: 2rem;
+        }
+    }
+}
+
+
+.project-container .nav.nav-pills {
+    width: 100%;
+    // margin: 0 auto;
+    overflow: hidden;
+    gap: 50px;
+}
+
+
+
+.project-container .nav.nav-pills .nav-link {
+    color: #fff;
+    // width: 100%;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    z-index: 0;
+
+    border: none;
+    background: transparent;
+    // margin: 0 20px;
+    padding-bottom: 12px;
+
+}
+
+.project-container .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4%;
+    background: white;
+    border-radius: 20px;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+
+.project-container .nav.nav-pills .nav-link.active::before {
+    width: 30% !important;
+}
+
+.project-container .nav.nav-pills .nav-link.active {
+    color: #F89E52;
+}
+
+
+.proj-imgbx {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 10px;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+    background: red;
+
+}
+
+.proj-imgbx::before {
+    content: "";
+    // background: #F89E52;
+    // opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    // filter: blur(100px);
+}
+
+.proj-imgbx:hover::before {
+    height: 100%;
+
+}
+
+.proj-imgbx:hover {
+    height: 100%;
+}
+
+.proj-txtx {
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    width: 100%;
+}
+
+.proj-imgbx:hover .proj-txtx {
+    top: 50%;
+    opacity: 1;
+}
+
+.proj-txtx h4 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+}
+
+.proj-txtx span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+}
+
+// .background-image-right {
+//     top: 20%;
+//     position: absolute;
+//     bottom: 0;
+//     width: 35%;
+//     right: 0;
+//     z-index: -4;
+// }

@@ -1,3 +1,25 @@
-footer{
-    height: 2000px;
+@import "/src/assets/colors.scss";
+
+
+.footer-container {
+    color: #A4A4A7;
+
+    .footer-content {
+        padding: 2rem;
+
+        .footer-left {
+            width: 100%;
+            display: flex;
+            border-top: 2px solid #46464F;
+            justify-content: center;
+            align-items: center;
+            // margin-top: 20px;
+            margin: 0 auto;
+            text-align: center;
+            p{
+                margin-top: 20px;
+            }
+        }
+
+    }
 }

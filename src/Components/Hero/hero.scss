@@ -1,77 +1,147 @@
 @import "../../assets/colors.scss";
+@import "../../assets/keyframes.scss";
 
-main {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    padding: 30px;
-    @media screen and (max-width: 900px) {
-        display: block;
-    }
 
-    .hero-left {
-        // background-color: aqua;
+.hero-container {
+    .hero-content {
+        position: relative;
         display: flex;
-        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        // align-items: flex-end;
-        width: 50%;
+        width: 100%;
+        padding: 2rem;
 
-
-
-
-        @media screen and (max-width: 900px) {
-            // flex-direction: column-reverse;
-            // justify-content: center;
-            // align-items: center;
-            margin: 0 auto;
-            margin-top: 10px;
-            padding: 0;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
         }
 
-        .left-content {
+        .hero1 {
+            position: absolute;
+            left: 40px;
+            bottom: 95px;
+            animation: tilt 5s infinite linear alternate;
+
+        }
+
+        .hero2 {
+            position: absolute;
+            left: 100px;
+            top: 110px;
+            animation: rotate 5s infinite linear;
+
+
+        }
+
+
+        .hero4 {
+            position: absolute;
+            right: 210px;
+            bottom: 190px;
+            animation: mover 10s infinite linear alternate;
+
+        }
+
+
+        .hero-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding: 1rem;
+            position: relative;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+            .hero3 {
+                position: absolute;
+                right: 10%;
+                top: 60px;
+                animation: tilt 5s infinite linear alternate;
+            }
+
+            .hero-img {
+                width: 100%;
+                align-content: center;
+
+                @media screen and (max-width: 1000px) {
+                    width: 350px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    width: 300px;
+                }
+
+                @media screen and (max-width: 330px) {
+                    width: 250px;
+                }
+
+                @media screen and (max-width: 270px) {
+                    width: 200px;
+                }
+
+                // }
+            }
+
+        }
+
+        .hero-right {
+            width: 50%;
             display: flex;
             flex-direction: column;
-            // justify-content: center;
-            align-items: flex-start;
+            padding: 1rem;
 
-            .span {
-                // color: $DarkCharcoal ;
-                color: $Black;
+            @media screen and (max-width: 1000px) {
+                align-items: center;
+                width: 100%;
+            }
+
+            .hero-btn {
+                margin-top: 20px;
+                width: 250px;
                 font-weight: 700;
-                font-size: x-large;
-                // background-color: red;
+                font-size: large;
+
+                @media screen and (max-width: 300px) {
+                    width: 200px;
+                }
             }
 
-            .intro {
-                color: $Black;
-                font-weight: 600;
-                font-size: medium;
+            .span-name {
+                color: yellow;
+                font-size: 25px;
+                font-weight: 500;
+                margin-bottom: 10px;
             }
 
-            .name {
-                // display: inline;
-                color: $NetflixRed;
+            .heading {
+                color: white;
+                font-size: 58px;
+                font-weight: 700;
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 48px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 40px;
+                }
+
+                @media screen and (max-width: 300px) {
+                    font-size: 35px;
+                }
             }
 
-            .typewriter {
-                color: orange;
+            .typewriter-headline {
+                color: $PrimaryColor;
+
+
+                @media screen and (max-width: 1000px) {
+                    width: 50%;
+                }
+
             }
         }
-    }
 
-    .hero-right {
-        background-color: yellow;
-        margin: 0 auto;
-        display: flex;
-        justify-content: flex-start;
-        // align-items: flex-start;
-        width: 50%;
-        @media screen and (max-width: 900px) {
-            // flex-direction: column-reverse;
-            // justify-content: center;
-            // align-items: center;
-            width: 100%;
-        }
     }
 }

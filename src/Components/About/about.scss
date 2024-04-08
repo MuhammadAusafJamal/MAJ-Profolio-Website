@@ -1,0 +1,113 @@
+@import "/src/assets/colors.scss";
+@import "/src/assets/keyframes.scss";
+
+
+.about-container {
+    .about-content {
+        width: 100%;
+        display: flex;
+        padding: 2rem;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column-reverse;
+        }
+
+        .about-left {
+            padding: 1rem;
+            width: 50%;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }  
+            @media screen and (max-width: 400px) {
+                // width: 100%;
+                margin-top: 10px;
+                padding:0.1rem;
+            }
+
+            // .about-left-top {
+            .about-title {
+                color: yellow;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 571px) {
+                // flex-direction: column;
+            }
+
+            .about-headline {
+                color: white;
+                font-size: 48px;
+                font-weight: 700;
+                margin-bottom: 20px;
+
+                .main {
+                    color: #F89E52;
+                }
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 38px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 28px;
+                }
+            }
+            .paragraph {
+                color: #61616C;
+                font-size: 18px;
+            }
+
+            // }
+        }
+
+        .about-right {
+            padding: 1rem;
+            width: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 400px) {
+                padding: 0.1rem;
+                justify-content: center;
+            }
+
+            .about-image {
+
+                @media screen and (max-width: 570px) {
+                    width: 400px;
+                }
+
+                @media screen and (max-width: 430px) {
+                    width: 300px;
+                }
+
+                @media screen and (max-width: 320px) {
+                    width: 250px;
+                } 
+                @media screen and (max-width: 280px) {
+                    width: 200px;
+                }
+            }
+
+
+
+            .hero2 {
+                position: absolute;
+                right: 290px;
+                top: 50px;
+                animation: rotate 5s infinite linear alternate;
+
+            }
+
+        }
+    }
+}

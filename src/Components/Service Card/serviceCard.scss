@@ -1,0 +1,40 @@
+@import '../../assets/colors.scss';
+
+.service-card-container {
+    border-radius: 20px;
+    background: transparent;
+    width: 400px;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+        background: #292930;
+    }
+
+    .service-card-container-content {
+        padding: 2rem;
+        img {
+            width: 30%;
+        }
+
+        .service-card-text {
+            margin-top: 40px;
+
+            h5 {
+                font-weight: 700;
+                color: white;
+                transition: 0.4s ease-in-out;
+
+                &:hover {
+                    color: $PrimaryColor;
+                }
+
+            }
+
+            span {
+                color: #7D7D7F;
+            }
+        }
+    }
+
+}
+

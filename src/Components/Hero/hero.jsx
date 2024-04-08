@@ -1,10 +1,15 @@
 import "./hero.scss";
 import Typewriter from 'typewriter-effect';
 import gif from "../../assets/Images/animation.json";
-import Lottie from "react-lottie";
-
-
-
+import MainButton from "../Main Button/mainbutton";
+// import banner from "../../assets/Images/banner_img.png"
+import banner from "../../assets/Images/slider_img01.png"
+import heroImage1 from "../../assets/Images/h2_banner_shape01.png"
+import heroImage2 from "../../assets/Images/h2_banner_shape02.png"
+import heroImage3 from "../../assets/Images/h2_banner_shape03.png"
+import heroImage4 from "../../assets/Images/h2_banner_shape04.png"
+import { FaDownload } from "react-icons/fa";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Hero() {
     const defaultOptions = {
@@ -14,32 +19,58 @@ function Hero() {
         rendererSettings: {
             preserveAspectRatio: "xMidYMid slice"
         }
+
     };
+
+    {/* <Lottie
+                            options={defaultOptions}
+                            height={"500"}
+                            width={"500"}
+                        /> */}
     return (
         <main className="hero-container">
-            <section className="hero-right">
-                <Lottie
-                    options={defaultOptions}
-                    height={"500"}
-                    width={"500"}
-                />
-            </section>
-            <section className="hero-left">
-                <div className="left-content">
-                    <span className="span">I'm</span>
-                    <h3 className="name">Muhammad Ausaf Jamal</h3>
-                    <h1 className="typewriter">
-                        <Typewriter
-                            options={{
-                                strings: ["Computer Science Student", "Front-End Developer", 'React Developer'],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        />
-                    </h1>
-                    <span className="intro">As a Frontend React Developer, my dedication lies in crafting high-quality web applications that precisely meet the requirements of my clients. With 2 years of hands-on experience in web development, I specialize in utilizing React.js, Next.js, TypeScript, and Node.js to develop scalable and robust web solutions. My focus on delivering excellence ensures that every project I undertake exceeds expectations and achieves optimal results</span>
-                </div>
-            </section>
+            <Container fluid="xxl">
+                <Row>
+                    <Col>
+                        <div className="hero-content">
+                            <div className="hero4">
+                                <img className="hero-img3" src={heroImage4} alt="Banner Image" />
+                            </div>
+                            <section className="hero-left">
+                                <img className="hero-img" src={banner} alt="Banner Image" />
+                                {/* <div className="hero1">
+                        <img className="hero-img1" src={heroImage2} alt="Banner Image" />
+                    </div> */}
+                                <div className="hero2">
+                                    <img className="hero-img2" src={heroImage1} alt="Banner Image" />
+                                </div>
+                                {/* <div className="hero3">
+                        <img className="hero-img3" src={heroImage3} alt="Banner Image" />
+                    </div> */}
+
+                            </section>
+                            <section className="hero-right">
+                                <span className="span-name">
+                                    Hello, I am
+                                </span>
+                                <h2 className="heading">
+                                    Muhammad Ausaf Jamal
+                                    <span className="heading typewriter-headline">
+                                        <Typewriter
+                                            options={{
+                                                strings: ["Front-End Developer", 'React Developer'],
+                                                autoStart: true,
+                                                loop: true,
+                                            }}
+                                        />
+                                    </span>
+                                </h2>
+                                <MainButton Cname={`hero-btn`} title={"Download CV"} icon={<FaDownload />} />
+                            </section>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </main>
     )
 }

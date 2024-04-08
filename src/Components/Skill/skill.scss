@@ -1,0 +1,125 @@
+@import "/src/assets/colors.scss";
+@import "/src/assets/keyframes.scss";
+
+
+.skill-container {
+    background: #1D1D25;
+
+    .skill-content {
+        width: 100%;
+        padding: 2rem;
+        // overflow:hidden;
+
+        @media screen and (max-width: 1000px) {
+            // flex-direction: column-reverse;
+        }
+
+        .skill-top {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+
+            .skill-title {
+                color: yellow;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 571px) {
+                // flex-direction: column;
+            }
+
+            .skill-headline {
+                color: white;
+                font-size: 48px;
+                font-weight: 700;
+                text-align: center;
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 38px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .skill-bottom {
+            padding: 2rem;
+            display: flex;
+
+            @media screen and (max-width: 1000px) {}
+
+            @media screen and (max-width: 400px) {
+                padding: 0.1rem;
+
+            }
+
+            .skill-bottom-left {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto ;
+            }
+        }
+    }
+}
+
+
+
+
+// SKILL CARD //
+.skill-card-container {
+    border-radius: 20px;
+    background: transparent;
+    width: 250px;
+    // height: 100px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    margin: 5px;
+
+    // &:hover {
+    //     background: #292930;
+    // }
+
+    .skill-card-container-content {
+        padding: 0.5rem;
+
+        img {
+            width: 30%;
+        }
+
+        .skill-card-text {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            align-items: center;
+            justify-content: center;
+
+            h5 {
+                font-weight: 700;
+                color: white;
+            }
+
+            .progress {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60%;
+                padding: 1rem;
+                background: $DarkCharcoal;
+            }
+        }
+    }
+
+}

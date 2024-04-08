@@ -1,0 +1,159 @@
+@import "/src/assets/colors.scss";
+@import "/src/assets/keyframes.scss";
+
+
+.contact-container {
+    background: #1D1D25;
+
+    .contact-content {
+        width: 100%;
+        padding: 2rem 0;
+
+        .contact-top {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            } 
+            @media screen and (max-width: 400px) {
+                padding: 0.1rem;
+            }
+
+            .contact-title {
+                color: yellow;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .contact-headline {
+                color: white;
+                font-size: 48px;
+                font-weight: 700;
+                text-align: center;
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 38px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .contact-bottom {
+            padding: 2rem;
+            display: flex;
+            width: 100%;
+
+            @media screen and (max-width: 1000px) {
+                flex-direction: column-reverse;
+            }
+            .contact-bottom-left {
+                padding: 2rem;
+                width: 55%;
+
+                @media screen and (max-width: 1000px) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 400px) {
+                    padding: 0.1rem;
+                }
+
+                .contact-bottom-left-heading {
+                    color: white;
+                    
+                }
+
+                .input {
+                    outline: none;
+                    margin-bottom: 20px;
+                    width: 100%;
+                    background: transparent;
+                    border: 1px solid rgba(227, 227, 227, 0.2);
+                    border-radius: 15px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    padding: 22px 35px;
+                    color: white;
+                    height: 72px;
+                }
+            }
+
+            .placeholder {
+                height: 250px !important;
+            }
+
+            .submit-btn {
+                width: 80%;
+                font-weight: 700;
+                padding: 28px 32px;
+            }
+        }
+
+        .contact-bottom-right {
+            width: 45%;
+            padding: 2rem;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+            @media screen and (max-width: 400px) {
+                padding: 0.1rem;
+            }
+
+            .icon-container {
+                display: flex;
+
+                .icon {
+                    width: 60px;
+                    height: fit-content;
+                    flex: 0 0 60px;
+                }
+
+                .head {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+            h2 {
+                color: white;
+            }
+
+
+            .para {
+                text-decoration: none;
+                color: #47465B;
+
+                &:hover {
+                    color: #F89E52;
+                    transition: 0.3s ease-in-out;
+
+                }
+            }
+
+
+
+
+
+
+            .social-container {
+                flex-direction: column ;
+                .social-icon{
+                    .icon{
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@import "/src/assets/colors.scss";
+
+
+.service-container {
+    background: #1D1D25;
+
+    .service-content {
+        width: 100%;
+        // align-items: center;
+        padding: 2rem;
+        // overflow:hidden;
+
+        @media screen and (max-width: 1000px) {
+            // flex-direction: column-reverse;
+        }
+
+        .service-top {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+
+            .service-title {
+                color: yellow;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 571px) {
+                // flex-direction: column;
+            }
+
+            .service-headline {
+                color: white;
+                font-size: 48px;
+                font-weight: 700;
+                text-align: center;
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 38px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .service-bottom {
+            padding: 1rem;
+            display: flex;
+            gap: 20px;
+
+            @media screen and (max-width: 1000px) {
+                flex-wrap: wrap;
+                justify-content: center;
+
+            }
+
+            @media screen and (max-width: 400px) {
+                padding: 0.1rem;
+
+            }
+        }
+    }
+}
