@@ -1,5 +1,4 @@
 import './App.scss'
-import Router from './Config/router';
 import Footer from './Components/Footer/footer';
 import Header from './Components/Header/header';
 import Hero from './Components/Hero/hero';
