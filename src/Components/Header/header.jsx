@@ -42,9 +42,9 @@ function Header() {
                             </section>
                             <nav className='center-container-nav'>
                                 <Form className='options'>
-                                    <Nav.Link onClick={() => handleSetActive("home")} href="#home" className={` list ${activeLink === "home" ? "active" : ""}`}>
+                                    {/* <Nav.Link onClick={() => handleSetActive("home")} href="#home" className={` list ${activeLink === "home" ? "active" : ""}`}>
                                         Home
-                                    </Nav.Link>
+                                    </Nav.Link> */}
                                     <Nav.Link onClick={() => handleSetActive("about")} href="#about" className={` list ${activeLink === "about" ? "active" : ""}`}>
                                         About
                                     </Nav.Link>

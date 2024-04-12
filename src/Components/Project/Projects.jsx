@@ -1,20 +1,21 @@
 import "./projects.scss";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
+import ProjectCard  from "./ProjectCard";
 import projImg2 from "../../assets/Images/nlogo.png";
-import proj from "../../assets/Images/h2_project_shape.png";
+import projBgImage from "../../assets/Images/h2_project_shape.png";
+import dicegame from "../../assets/Images/diceGameProj.png";
+import foody from "../../assets/Images/foody zone land.jpg";
+import richtext from "../../assets/Images/richtext.jpg";
+import todo from "../../assets/Images/todo.jpg";
+import nike from "../../assets/Images/nike land.jpg";
+import airforshare from "../../assets/Images/airforshareclone.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+
 
 function Project() {
 
   const Htmlprojects = [
-    {
-      title: "Foody Zone",
-      description: "Landing Page",
-      imgUrl: projImg2,
-      Url: "https://www.youtube.com/"
-    }, 
     {
       title: "Foody Zone",
       description: "Landing Page",
@@ -25,28 +26,42 @@ function Project() {
 
   const Jsprojects = [
     {
-      title: "Foody Zone",
+      title: "Rich Text Editor",
       description: "Landing Page",
-      imgUrl: projImg2,
-      Url: "https://www.youtube.com/"
-    }, {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      Url: "https://www.youtube.com/"
+      imgUrl: richtext,
+      Url: "https://rich-text-editor-liart.vercel.app/"
     }
   ];
+
   const Reactprojects = [
     {
       title: "Dice Guessing Game",
       description: "Design & Development",
-      imgUrl: projImg2,
-      Url: "https://www.youtube.com/"
+      imgUrl: dicegame,
+      Url: "https://dice-guess-game.netlify.app/"
     },
     {
-      title: "Business Startup",
+      title: "Air For Share Clone",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: airforshare,
+      Url: "https://air-for-share-clone.vercel.app/"
+    },
+    {
+      title: "Nike Landing Page",
+      description: "Design & Development",
+      imgUrl: nike,
+      Url: "https://nike-landiing.netlify.app/"
+    },
+    {
+      title: "Todo App",
+      description: "Design & Development",
+      imgUrl: todo,
+      Url: "https://tooddo-app.netlify.app/"
+    },
+    {
+      title: "Foody Zone",
+      description: "Landing Page",
+      imgUrl: foody,
       Url: "https://www.youtube.com/"
     }
   ];
@@ -57,8 +72,8 @@ function Project() {
         position: "absolute",
         right: 0,
         top: 0,
-        width:"500px"
-      }} src={proj} alt="Bg" />
+        width: "500px"
+      }} src={projBgImage} alt="Bg" />
       <Container>
         <Row>
           <Col size={12}>

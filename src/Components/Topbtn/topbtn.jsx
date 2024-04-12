@@ -1,7 +1,5 @@
 // import "./topbtn.scss";
 // import projImg2 from "../../assets/Images/coding.png";
-// import { useState, useEffect } from "react";
-
 
 import React, { useState, useEffect } from 'react';
 import { GoMoveToTop } from "react-icons/go";
