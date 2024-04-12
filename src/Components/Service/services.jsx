@@ -10,7 +10,7 @@ import ServiceCard from "../Service Card/serviceCard";
 
 function Service() {
     return (
-        <main className="service-container">
+        <main className="service-container" id="services">
             <Container fluid="xxl">
                 <Row>
                     <Col>

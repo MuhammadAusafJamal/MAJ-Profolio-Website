@@ -67,7 +67,7 @@ function Project() {
   ];
 
   return (
-    <section className="project-container" id="projects">
+    <section className="project-container" id="portfolio">
       <img style={{
         position: "absolute",
         right: 0,

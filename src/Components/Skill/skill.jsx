@@ -15,7 +15,7 @@ import fb from '../../assets/Images/firebase.png'
 
 function Skill() {
     return (
-        <main className="skill-container">
+        <main className="skill-container" id="skills">
             <Container fluid="xxl">
                 <Row>
                     <Col>

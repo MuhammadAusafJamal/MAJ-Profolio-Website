@@ -28,7 +28,7 @@ function Hero() {
                             width={"500"}
                         /> */}
     return (
-        <main className="hero-container">
+        <main className="hero-container" id="home">
             <Container fluid="xxl">
                 <Row>
                     <Col>

@@ -42,12 +42,12 @@ function LayoutModal() {
                 </Offcanvas.Header>
                 <Offcanvas.Body style={{ background: "#292930" }}>
                     <Form className='modal-options'>
-                        {/* <Nav.Link onClick={() => {
+                        <Nav.Link onClick={() => {
                             handleClose()
                             handleSetActive("home")
                         }} href="#home" className={` list ${activeLink === "home" ? "active" : ""}`}>
                             Home
-                        </Nav.Link> */}
+                        </Nav.Link>
                         <Nav.Link onClick={() => {
                             handleClose()
                             handleSetActive("about")

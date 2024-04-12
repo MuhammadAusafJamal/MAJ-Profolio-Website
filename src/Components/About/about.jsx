@@ -8,7 +8,7 @@ import 'animate.css'
 
 function About(isVisible) {
     return (
-        <main className="about-container">
+        <main className="about-container" id="about">
             <Container fluid="xxl">
                 <Row>
                     <Col>

@@ -13,7 +13,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 
 function Contact() {
     return (
-        <main className="contact-container">
+        <main className="contact-container" id="contact">
             <Container fluid="xxl">
                 <Row>
                     <Col>

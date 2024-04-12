@@ -1,7 +1,4 @@
-// import "./topbtn.scss";
-// import projImg2 from "../../assets/Images/coding.png";
-
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { GoMoveToTop } from "react-icons/go";
 
 
@@ -10,7 +7,7 @@ function ScrollToTopButton() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setShowButton(window.scrollY > 200);
+            setShowButton(window.scrollY > 300);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -41,13 +38,11 @@ function ScrollToTopButton() {
                 cursor: 'pointer',
                 padding: '15px',
                 borderRadius: '10px',
-                fontSize: '20px',
-                // fontWeight:,
-
+                fontSize: '20px'
             }}
         >
-        <GoMoveToTop />
-        </button>
+            <GoMoveToTop />
+        </button >
     );
 }
 
