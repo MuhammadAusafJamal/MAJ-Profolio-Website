@@ -29,9 +29,11 @@ function Contact() {
                                 <section className="contact-bottom-left">
                                     <h2 className="contact-bottom-left-heading">Send Us a Message 🚀</h2>
                                     <form action="https://formsubmit.co/e92fe7bf766d79943035baa698b4399e" method="POST">
-                                        <input className="input" type="text" placeholder="Name" name="Name" />
-                                        <input className="input" type="email" placeholder="Email" name="Email" />
-                                        <textarea className="input placeholder" placeholder="Write your message here" name="Message" />
+                                        <input required className="input" type="text" placeholder="Name" name="Name" />
+                                        <input required className="input" type="email" placeholder="Email" name="Email" />
+                                        <textarea required className="input placeholder" placeholder="Write your message here" name="Message" />
+                                        <input type="hidden" name="_captcha" value="false"/>
+                                        <input type="hidden" name="_template" value="table"/>
                                         <CvBtn type={"submit"} Cname={"submit-btn"} title={"Send Messsage"} />
                                     </form>
 
@@ -60,26 +62,26 @@ function Contact() {
                                         <div className="head">
                                             <h2 className="heading">Phone</h2>
                                             <p ><a className="para" href='tel:03482238001'>0348-2238001</a></p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="social-container icon-container ">
-                                    <p className="para social-line">Visit my socials and get connected</p>
-                                    <div className="social-icon">
-                                        <a target="_blank" href="https://github.com/MuhammadAusafJamal"> <img className="phone-icon icon" src={git} alt="Github" /></a>
+                                    <div className="social-container icon-container ">
+                                        <p className="para social-line">Visit my socials and get connected</p>
+                                        <div className="social-icon">
+                                            <a target="_blank" href="https://github.com/MuhammadAusafJamal"> <img className="phone-icon icon" src={git} alt="Github" /></a>
 
-                                        <a target="_blank" href="https://www.linkedin.com/in/muhammadausafjamal482238001/"><img className="phone-icon icon" src={ln} alt="LinkedIn" /></a>
+                                            <a target="_blank" href="https://www.linkedin.com/in/muhammadausafjamal482238001/"><img className="phone-icon icon" src={ln} alt="LinkedIn" /></a>
 
-                                        <a target="_blank" href="https://wa.me/+923482238001"><img className="phone-icon icon" src={wa} alt="WhatsApp" /></a>
+                                            <a target="_blank" href="https://wa.me/+923482238001"><img className="phone-icon icon" src={wa} alt="WhatsApp" /></a>
 
-                                        <a target="_blank" href="https://www.facebook.com/Muhammad.AusafK"><img className="phone-icon icon" src={fb} alt="FaceBook" /></a>
+                                            <a target="_blank" href="https://www.facebook.com/Muhammad.AusafK"><img className="phone-icon icon" src={fb} alt="FaceBook" /></a>
+                                        </div>
                                     </div>
-                                </div>
+                                </section>
                             </section>
-                        </section>
-                    </div>
-                </Col>
-            </Row>
-        </Container>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </main >
     )
 }
