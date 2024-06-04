@@ -15,7 +15,7 @@ function About(isVisible) {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className="about-content">
-                                    <section className={`about-left ${isVisible ? "animate__animated animate__fadeOut" : ""}`}>
+                                    <section className={`about-left  ${isVisible ? "animate__animated animate__slideInLeft" : ""}`}>
                                         <span className="about-title">
                                             About me
                                         </span>
@@ -27,7 +27,7 @@ function About(isVisible) {
                                         </p>
                                     </section>
 
-                                    <section className={`about-right ${isVisible ? "animate__animated animate__slideInUp" : ""}`}>
+                                    <section className={`about-right ${isVisible ? "animate__animated animate__slideInRight" : ""}`}>
                                         <img className="about-image" src={about} alt="about-image" />
                                     </section>
                                 </div>

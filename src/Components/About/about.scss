@@ -6,7 +6,7 @@
     .about-content {
         width: 100%;
         display: flex;
-        padding: 2rem;
+        // padding: 2rem;
 
         @media screen and (max-width: 1000px) {
             flex-direction: column-reverse;
@@ -18,23 +18,18 @@
 
             @media screen and (max-width: 1000px) {
                 width: 100%;
-            }  
-            @media screen and (max-width: 400px) {
-                // width: 100%;
-                margin-top: 10px;
-                padding:0.1rem;
             }
 
-            // .about-left-top {
+            @media screen and (max-width: 400px) {
+                margin-top: 10px;
+                padding: 0.1rem;
+            }
+
             .about-title {
                 color: yellow;
                 font-size: 18px;
                 font-weight: 600;
                 margin-bottom: 10px;
-            }
-
-            @media screen and (max-width: 571px) {
-                // flex-direction: column;
             }
 
             .about-headline {
@@ -44,7 +39,7 @@
                 margin-bottom: 20px;
 
                 .main {
-                    color: #F89E52;
+                    color: $PrimaryColor;
                 }
 
                 @media screen and (max-width: 1000px) {
@@ -55,12 +50,12 @@
                     font-size: 28px;
                 }
             }
+
             .paragraph {
                 color: #61616C;
                 font-size: 18px;
             }
 
-            // }
         }
 
         .about-right {
@@ -92,7 +87,8 @@
 
                 @media screen and (max-width: 320px) {
                     width: 250px;
-                } 
+                }
+
                 @media screen and (max-width: 280px) {
                     width: 200px;
                 }
